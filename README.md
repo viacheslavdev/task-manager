@@ -1,8 +1,53 @@
-# React + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Task Manager - это простое приложение управления задачами, построенное с использованием React, JSON Server и других технологий. Предоставляет пользовательский интерфейс для добавления, редактирования и удаления задач.
 
-Currently, two official plugins are available:
+## Оглавление
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Установка](#установка)
+- [Использование](#использование)
+- [Технологии](#технологии)
+- [Автор](#автор)
+
+
+## Установка
+
+1. **Клонировать репозиторий:**
+
+    ```bash
+    git clone https://github.com/viacheslavdev/task-manager.git
+    ```
+
+2. **Установить зависимости:**
+
+    ```bash
+    cd task-manager
+    yarn install
+    ```
+
+3. **Запустить приложение:**
+
+    ```bash
+    yarn run dev
+    ```
+
+    Приложение будет доступно по адресу [http://localhost:5173/](http://localhost:5173/)
+
+    JSON Server доступен по адресу http://localhost:5001/
+
+## Использование
+
+В приложении Task Manager вы можете добавлять, редактировать и удалять задачи. Пользовательский интерфейс интуитивно понятен и прост в использовании.
+
+## Технологии
+
+- **React:** JavaScript-библиотека для создания пользовательских интерфейсов.
+- **JSON Server:** Удобный инструмент для создания фейкового REST API с использованием JSON-файлов.
+- **UUID:** Библиотека для генерации уникальных идентификаторов.
+- **React Calendar:** Компонент для работы с календарем в приложениях, построенных на React.
+
+Эти технологии используются в проекте для обеспечения функциональности и взаимодействия с данными.
+
+## Автор
+
+[Viacheslav Stryzh](https://github.com/viacheslavdev)
