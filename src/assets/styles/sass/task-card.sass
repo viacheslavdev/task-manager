@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+
+ul
+    list-style: none
+
+
+.card
+    margin: 20px
+    border: 10px
+    padding: 25px 10px
+    max-width: 300px
+    box-shadow: 0 2px 4px silver
+    border-radius: 15px
+
+    &__wrapper
+        position: relative
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        gap: 15px
+        .card__name
+            text-align: center
+            font-weight: 500
+            font-size: 20px
+            margin-bottom: 10px
+            border: none
+        .status, .priority, .date
+            padding-left: 5px
+            margin: 5px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            cursor: pointer
+            border-radius: 5px
+
+            div
+                position: relative
+                width: 100px
+                height: 30px
+                text-align: center
+                line-height: 30px
+                border: none
+                border-radius: 5px
+                color: white
+                .edit__status, .edit__priority
+                    background-color: white
+                    color: black
+                    position: absolute
+                    width: 150%
+                    height: auto
+                    margin-top: 5px
+                    left: -25%
+                    padding: 10px 0
+                    border: 1px solid silver
+                    padding: 8px
+                    z-index: 10
+                    .edit__list
+                        display: flex
+                        flex-direction: column
+                        gap: 5px
+                        li
+                            transition: scale 0.2s
+                            color: white
+                            border-radius: 5px
+                            &:hover
+                                opacity: 0.85
+                                scale: 1.05
+        .description 
+            width: 100%
+            div
+                width: 280px
+                overflow: hidden
+                word-wrap: break-word
+                white-space: pre-wrap
+                overflow-wrap: break-word
+                padding: 5px
+                line-height: 1.5
+                border: 1px solid silver
+                border-radius: 5px
+                outline: none
+        .date
+            &__element
+                width: 100px
+                height: 30px
+                background-color: silver
+                border-radius: 5px
+                border: 1px solid silver
+            
+.calendar 
+    position: relative
+
+.add__task
+    position: absolute
+    top: 0
+    right: 0
+    margin: 20px 20px 0 0
+    height: 50px
+    width: 50px
+    background-color: green
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    overflow: hidden
+    transition: scale 0.2s
+    &:hover
+        scale: 1.2
+    button
+        color: white
+        height: 100%
+        width: 100%
+        font-size: 30px
+        background-color: green
+        border: none
+        cursor: pointer
+
+.delete__task
+    width: 100px
+    height: 30px
+    line-height: 30px
+    transition: scale 0.2s
+    &:hover
+        scale: 1.07
+    button
+        width: 100%
+        height: 100%
+        border: none
+        background-color: tomato
+        border-radius: 5px
+        color: white
+        cursor: pointer
+
+    
+
+
